@@ -16,9 +16,20 @@ public class BirthdayReminder {
 		String myBirthday = "April 16th";
 
 		// 2. Find out which birthday the user wants and and store their response in a variable
-	
+		String birthday = JOptionPane.showInputDialog("Who's birthday do you want to find?");
 		// 3. Print out what the user typed
-		
+		if(birthday.equalsIgnoreCase("mom")) {
+			JOptionPane.showMessageDialog(null, momsBirthday);
+			System.out.println(momsBirthday);
+		}else if(birthday.equalsIgnoreCase("dad")) {
+			JOptionPane.showMessageDialog(null, dadsBirthday);
+			System.out.println(dadsBirthday);
+		}else if(birthday.equalsIgnoreCase("joshua")) {
+			JOptionPane.showMessageDialog(null, myBirthday);
+			System.out.println(myBirthday);
+		}else {
+			JOptionPane.showMessageDialog(null, "I don't know that person");
+		}
 		// 4. if user asked for "mom"
 			//print mom's birthday
 		// 5. if user asked for "dad"
